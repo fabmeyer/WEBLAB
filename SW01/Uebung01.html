@@ -1,0 +1,284 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="1504.83">
+  <style type="text/css">
+    p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 19.0px; font: 13.0px Monaco; color: #000000; -webkit-text-stroke: #000000; background-color: #f8f8f8}
+    p.p4 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 19.0px; font: 13.0px Monaco; color: #000000; -webkit-text-stroke: #000000; background-color: #f8f8f8; min-height: 17.0px}
+    p.p6 {margin: 0.0px 0.0px 15.0px 0.0px; line-height: 22.0px; font: 14.0px Helvetica; color: #000000; -webkit-text-stroke: #000000}
+    span.s1 {font-kerning: none}
+    span.s2 {font-kerning: none; text-shadow: 0.0px 1.0px 0.0px #ffffff}
+  </style>
+</head>
+<body>
+<h1 style="margin: 0.0px 0.0px 10.0px 0.0px; line-height: 44.0px; font: 28.0px Helvetica; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b>WEBLAB: Uebung 1</b></span></h1>
+<h2 style="margin: 0.0px 0.0px 10.0px 0.0px; line-height: 38.0px; font: 24.0px Helvetica; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b>Author: Fabian Meyer</b></span></h2>
+<p class="p3"><span class="s2">"use strict";</span></p>
+<h2 style="margin: 0.0px 0.0px 10.0px 0.0px; line-height: 38.0px; font: 24.0px Helvetica; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b>Variablen Definitionen</b></span></h2>
+<p class="p3"><span class="s2">var a = 1;</span></p>
+<p class="p3"><span class="s2">var b = 1.1;</span></p>
+<p class="p3"><span class="s2">var c = true;</span></p>
+<p class="p3"><span class="s2">var d = "Hallo";</span></p>
+<p class="p3"><span class="s2">var e;</span></p>
+<p class="p4"><span class="s2"></span><br></p>
+<p class="p3"><span class="s2">var myObject = {</span></p>
+<p class="p3"><span class="s2"><span class="Apple-converted-space">  </span>name: "Fabian",</span></p>
+<p class="p3"><span class="s2"><span class="Apple-converted-space">  </span>number: 101,</span></p>
+<p class="p3"><span class="s2">}</span></p>
+<p class="p3"><span class="s2">console.log(myObject); // logs myObject as JSON</span></p>
+<p class="p4"><span class="s2"></span><br></p>
+<p class="p3"><span class="s2">var myNumbers = {</span></p>
+<p class="p3"><span class="s2"><span class="Apple-converted-space">  </span>one: 1,</span></p>
+<p class="p3"><span class="s2"><span class="Apple-converted-space">  </span>two: 2,</span></p>
+<p class="p3"><span class="s2"><span class="Apple-converted-space">  </span>three: 3,</span></p>
+<p class="p3"><span class="s2">}</span></p>
+<p class="p3"><span class="s2">console.log(myNumbers);</span></p>
+<p class="p4"><span class="s2"></span><br></p>
+<p class="p3"><span class="s2">var myMixedArray = {</span></p>
+<p class="p3"><span class="s2"><span class="Apple-converted-space">  </span>string: "Hello",</span></p>
+<p class="p3"><span class="s2"><span class="Apple-converted-space">  </span>number: 303,</span></p>
+<p class="p3"><span class="s2">}</span></p>
+<p class="p4"><span class="s2"></span><br></p>
+<p class="p3"><span class="s2">var myFunction = function(a, b, c) {</span></p>
+<p class="p3"><span class="s2"><span class="Apple-converted-space">  </span>return (a + b * c);</span></p>
+<p class="p3"><span class="s2">}</span></p>
+<p class="p4"><span class="s2"></span><br></p>
+<p class="p3"><span class="s2">console.log(typeof(a)); // number</span></p>
+<p class="p3"><span class="s2">console.log(typeof(b)); // number</span></p>
+<p class="p3"><span class="s2">console.log(typeof(c)); // boolean</span></p>
+<p class="p3"><span class="s2">console.log(typeof(d)); // string</span></p>
+<p class="p3"><span class="s2">console.log(typeof(e)); // undefined (var e created without a value)</span></p>
+<p class="p3"><span class="s2">console.log(typeof(f)); // undefined (no var f created)</span></p>
+<p class="p3"><span class="s2">console.log(typeof(myObject)); // object</span></p>
+<p class="p3"><span class="s2">console.log(typeof(myFunction())); // number</span></p>
+<p class="p4"><span class="s2"></span><br></p>
+<p class="p3"><span class="s2">console.log(myFunction(1, 2, 3)); // 7</span></p>
+<h2 style="margin: 0.0px 0.0px 10.0px 0.0px; line-height: 38.0px; font: 24.0px Helvetica; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b>Array Definitionen</b></span></h2>
+<p class="p3"><span class="s2">var myColourArray = ["green", "white", "grey", "blue"];</span></p>
+<p class="p3"><span class="s2">console.log(myColourArray);</span></p>
+<p class="p3"><span class="s2">console.log(typeof(myColourArray));</span></p>
+<p class="p3"><span class="s2">myColourArray.push("pink");</span></p>
+<p class="p3"><span class="s2">console.log(myColourArray); // works</span></p>
+<p class="p3"><span class="s2">myColourArray.pop();</span></p>
+<p class="p3"><span class="s2">console.log(myColourArray); // works</span></p>
+<p class="p3"><span class="s2">var myColours = myColourArray.join(); // creates a string</span></p>
+<p class="p3"><span class="s2">// from all strings in array</span></p>
+<p class="p3"><span class="s2">console.log(myColours);</span></p>
+<p class="p3"><span class="s2">myColourArray.sort(); // sorting array</span></p>
+<p class="p3"><span class="s2">console.log(myColourArray);</span></p>
+<p class="p3"><span class="s2">// iterator through array</span></p>
+<p class="p3"><span class="s2">myColourArray.forEach(function(item, index) {</span></p>
+<p class="p3"><span class="s2"><span class="Apple-converted-space">  </span>console.log(item, index);</span></p>
+<p class="p3"><span class="s2">});</span></p>
+<p class="p4"><span class="s2"></span><br></p>
+<p class="p3"><span class="s2">// TODO</span></p>
+<p class="p3"><span class="s2">// ???</span></p>
+<p class="p3"><span class="s2">// var myNumberArray = [1, 2, 3];</span></p>
+<p class="p3"><span class="s2">// var myArrayLength = myNumberArray.length;</span></p>
+<p class="p3"><span class="s2">// var sumOfSquares = myNumberArray.reduce(function(x, y) {</span></p>
+<p class="p3"><span class="s2">// <span class="Apple-converted-space">  </span>for (var i = 0; i &lt; myArrayLength; i++) {</span></p>
+<p class="p3"><span class="s2">// <span class="Apple-converted-space">    </span>myNumberArray[i] = myNumberArray[i] * myNumberArray[i];</span></p>
+<p class="p3"><span class="s2">// <span class="Apple-converted-space">  </span>}</span></p>
+<p class="p3"><span class="s2">// <span class="Apple-converted-space">  </span>console.log(myNumberArray);</span></p>
+<p class="p3"><span class="s2">// <span class="Apple-converted-space">  </span>return x + y;</span></p>
+<p class="p3"><span class="s2">// }, 0);</span></p>
+<p class="p3"><span class="s2">// console.log(sumOfSquares);</span></p>
+<p class="p4"><span class="s2"></span><br></p>
+<p class="p3"><span class="s2">var printProperties = function(obj) {</span></p>
+<p class="p3"><span class="s2"><span class="Apple-converted-space">  </span>var propValue;</span></p>
+<p class="p3"><span class="s2"><span class="Apple-converted-space">  </span>for (var propName in obj) {</span></p>
+<p class="p3"><span class="s2"><span class="Apple-converted-space">    </span>propValue = obj[propName];</span></p>
+<p class="p3"><span class="s2"><span class="Apple-converted-space">    </span>console.log(propName + ": " + propValue);</span></p>
+<p class="p3"><span class="s2"><span class="Apple-converted-space">  </span>}</span></p>
+<p class="p3"><span class="s2">}</span></p>
+<p class="p3"><span class="s2">// object creation via object literal method</span></p>
+<p class="p3"><span class="s2">var person1 = {</span></p>
+<p class="p3"><span class="s2"><span class="Apple-converted-space">  </span>firstName: "Fabian",</span></p>
+<p class="p3"><span class="s2"><span class="Apple-converted-space">  </span>lastName: "Meyer",</span></p>
+<p class="p3"><span class="s2"><span class="Apple-converted-space">  </span>age: 30,</span></p>
+<p class="p3"><span class="s2"><span class="Apple-converted-space">  </span>height: 188</span></p>
+<p class="p3"><span class="s2">}</span></p>
+<p class="p3"><span class="s2">console.log(person1.hasOwnProperty("firstName")); // true</span></p>
+<p class="p3"><span class="s2">printProperties(person1); // works</span></p>
+<p class="p4"><span class="s2"></span><br></p>
+<p class="p3"><span class="s2">// object creation via object constructor method</span></p>
+<p class="p3"><span class="s2">var person2 = new Object();</span></p>
+<p class="p3"><span class="s2">person2.firstName = "Livio";</span></p>
+<p class="p3"><span class="s2">person2.lastName = "Meyer";</span></p>
+<p class="p3"><span class="s2">printProperties(person2); // works</span></p>
+<p class="p3"><span class="s2">// date object creation via date constructor method</span></p>
+<p class="p3"><span class="s2">var date1 = new Date("February 21, 2018 10:50");</span></p>
+<p class="p3"><span class="s2">console.log(date1); // works</span></p>
+<p class="p4"><span class="s2"></span><br></p>
+<p class="p3"><span class="s2">// creating interval object with 3 variables</span></p>
+<p class="p3"><span class="s2">function myIntervalFunction(startValue, endValue) {</span></p>
+<p class="p3"><span class="s2"><span class="Apple-converted-space">  </span>this.startValue = startValue;</span></p>
+<p class="p3"><span class="s2"><span class="Apple-converted-space">  </span>this.endValue = endValue;</span></p>
+<p class="p3"><span class="s2">}</span></p>
+<p class="p4"><span class="s2"></span><br></p>
+<p class="p3"><span class="s2">// creating function to evaluate if value is in interval</span></p>
+<p class="p3"><span class="s2">function isInside(toEvaluate) {</span></p>
+<p class="p3"><span class="s2"><span class="Apple-converted-space">  </span>this.toEvaluate = toEvaluate;</span></p>
+<p class="p3"><span class="s2"><span class="Apple-converted-space">  </span>if (this.toEvaluate &gt;= this.startValue &amp;&amp; this.toEvaluate &lt;= this.endValue) {</span></p>
+<p class="p3"><span class="s2"><span class="Apple-converted-space">    </span>return true;</span></p>
+<p class="p3"><span class="s2"><span class="Apple-converted-space">  </span>} else {</span></p>
+<p class="p3"><span class="s2"><span class="Apple-converted-space">    </span>return false;</span></p>
+<p class="p3"><span class="s2"><span class="Apple-converted-space">  </span>}</span></p>
+<p class="p3"><span class="s2">}</span></p>
+<p class="p3"><span class="s2">// append function to object</span></p>
+<p class="p3"><span class="s2">myIntervalFunction.prototype.isInside = isInside;</span></p>
+<p class="p3"><span class="s2">// setting up an object of type myIntervalFunction</span></p>
+<p class="p3"><span class="s2">var myIntervalObject1 = new myIntervalFunction(10, 20);</span></p>
+<p class="p3"><span class="s2">console.log(myIntervalObject1.isInside(10)); // works</span></p>
+<p class="p4"><span class="s2"></span><br></p>
+<p class="p3"><span class="s2">// function mult as function declaration statement</span></p>
+<p class="p3"><span class="s2">function mult1(x, y) {</span></p>
+<p class="p3"><span class="s2"><span class="Apple-converted-space">  </span>return x * y;</span></p>
+<p class="p3"><span class="s2">}</span></p>
+<p class="p3"><span class="s2">// function as literal / function expression</span></p>
+<p class="p3"><span class="s2">var mult2 = function(x, y) {</span></p>
+<p class="p3"><span class="s2"><span class="Apple-converted-space">  </span>return x * y;</span></p>
+<p class="p3"><span class="s2">}</span></p>
+<p class="p4"><span class="s2"></span><br></p>
+<p class="p3"><span class="s2">// simple factorial function</span></p>
+<p class="p3"><span class="s2">var factorialSimple = function(x) {</span></p>
+<p class="p3"><span class="s2"><span class="Apple-converted-space">  </span>if (x &lt;= 1) {</span></p>
+<p class="p3"><span class="s2"><span class="Apple-converted-space">    </span>return 1;</span></p>
+<p class="p3"><span class="s2"><span class="Apple-converted-space">  </span>} else {</span></p>
+<p class="p3"><span class="s2"><span class="Apple-converted-space">    </span>return x * factorialSimple(x - 1);</span></p>
+<p class="p3"><span class="s2"><span class="Apple-converted-space">  </span>}</span></p>
+<p class="p3"><span class="s2">}</span></p>
+<p class="p3"><span class="s2">console.log(factorialSimple(5)); // works</span></p>
+<p class="p4"><span class="s2"></span><br></p>
+<p class="p3"><span class="s2">// memoization function wrapper</span></p>
+<p class="p3"><span class="s2">const memoize = (fn) =&gt; {</span></p>
+<p class="p3"><span class="s2"><span class="Apple-converted-space">  </span>let cache = {};</span></p>
+<p class="p3"><span class="s2"><span class="Apple-converted-space">  </span>return (...args) =&gt; {</span></p>
+<p class="p3"><span class="s2"><span class="Apple-converted-space">    </span>let n = args[0];</span></p>
+<p class="p3"><span class="s2"><span class="Apple-converted-space">    </span>if (n in cache) {</span></p>
+<p class="p3"><span class="s2"><span class="Apple-converted-space">      </span>console.log('Fetching from cache', n);</span></p>
+<p class="p3"><span class="s2"><span class="Apple-converted-space">      </span>return cache[n];</span></p>
+<p class="p3"><span class="s2"><span class="Apple-converted-space">    </span>} else {</span></p>
+<p class="p3"><span class="s2"><span class="Apple-converted-space">      </span>console.log('Calculating result', n);</span></p>
+<p class="p3"><span class="s2"><span class="Apple-converted-space">      </span>let result = fn(n);</span></p>
+<p class="p3"><span class="s2"><span class="Apple-converted-space">      </span>cache[n] = result;</span></p>
+<p class="p3"><span class="s2"><span class="Apple-converted-space">      </span>return result;</span></p>
+<p class="p3"><span class="s2"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p3"><span class="s2"><span class="Apple-converted-space">  </span>}</span></p>
+<p class="p3"><span class="s2">}</span></p>
+<p class="p3"><span class="s2">const factorial = memoize(</span></p>
+<p class="p3"><span class="s2"><span class="Apple-converted-space">  </span>(x) =&gt; {</span></p>
+<p class="p3"><span class="s2"><span class="Apple-converted-space">    </span>if (x === 0) {</span></p>
+<p class="p3"><span class="s2"><span class="Apple-converted-space">      </span>return 1;</span></p>
+<p class="p3"><span class="s2"><span class="Apple-converted-space">    </span>} else {</span></p>
+<p class="p3"><span class="s2"><span class="Apple-converted-space">      </span>return x * factorial(x - 1);</span></p>
+<p class="p3"><span class="s2"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p3"><span class="s2"><span class="Apple-converted-space">  </span>}</span></p>
+<p class="p3"><span class="s2">);</span></p>
+<p class="p3"><span class="s2">console.log(factorial(5)); // calculated</span></p>
+<p class="p3"><span class="s2">console.log(factorial(6)); // calculated for 6 and cached for 5</span></p>
+<h2 style="margin: 0.0px 0.0px 10.0px 0.0px; line-height: 38.0px; font: 24.0px Helvetica; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b>Closures und Objekt-Hierarchien</b></span></h2>
+<h3 style="margin: 0.0px 0.0px 10.0px 0.0px; line-height: 28.0px; font: 18.0px Helvetica; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b>1. Closures</b></span></h3>
+<p class="p3"><span class="s2">var myStack = {</span></p>
+<p class="p3"><span class="s2"><span class="Apple-converted-space">  </span>arr: [],</span></p>
+<p class="p3"><span class="s2"><span class="Apple-converted-space">  </span>counter: 0,</span></p>
+<p class="p3"><span class="s2"><span class="Apple-converted-space">  </span>push: function(obj) {</span></p>
+<p class="p3"><span class="s2"><span class="Apple-converted-space">    </span>this.arr[this.counter] = obj;</span></p>
+<p class="p3"><span class="s2"><span class="Apple-converted-space">    </span>this.counter++;</span></p>
+<p class="p3"><span class="s2"><span class="Apple-converted-space">  </span>},</span></p>
+<p class="p3"><span class="s2"><span class="Apple-converted-space">  </span>pop: function() {</span></p>
+<p class="p3"><span class="s2"><span class="Apple-converted-space">    </span>if (this.counter === 0) {</span></p>
+<p class="p3"><span class="s2"><span class="Apple-converted-space">      </span>return undefined;</span></p>
+<p class="p3"><span class="s2"><span class="Apple-converted-space">    </span>} else {</span></p>
+<p class="p3"><span class="s2"><span class="Apple-converted-space">      </span>this.counter--;</span></p>
+<p class="p3"><span class="s2"><span class="Apple-converted-space">      </span>var result = this.arr[this.counter];</span></p>
+<p class="p3"><span class="s2"><span class="Apple-converted-space">      </span>delete this.arr[this.counter];</span></p>
+<p class="p3"><span class="s2"><span class="Apple-converted-space">      </span>return result;</span></p>
+<p class="p3"><span class="s2"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p3"><span class="s2"><span class="Apple-converted-space">  </span>}</span></p>
+<p class="p3"><span class="s2">}</span></p>
+<p class="p3"><span class="s2">console.log(myStack);</span></p>
+<p class="p3"><span class="s2">myStack.push(1); // works</span></p>
+<p class="p3"><span class="s2">console.log(myStack);</span></p>
+<p class="p3"><span class="s2">myStack.push(2);</span></p>
+<p class="p3"><span class="s2">console.log(myStack);</span></p>
+<p class="p3"><span class="s2">console.log(myStack.pop()); // works</span></p>
+<p class="p3"><span class="s2">console.log(myStack);</span></p>
+<p class="p3"><span class="s2">console.log(myStack.pop());</span></p>
+<p class="p3"><span class="s2">console.log(myStack);</span></p>
+<p class="p4"><span class="s2"></span><br></p>
+<p class="p3"><span class="s2">// lösung:</span></p>
+<p class="p3"><span class="s2">// var stack = (function() {</span></p>
+<p class="p3"><span class="s2">// <span class="Apple-converted-space">  </span>var data = [];</span></p>
+<p class="p3"><span class="s2">// <span class="Apple-converted-space">  </span>return {</span></p>
+<p class="p3"><span class="s2">// <span class="Apple-converted-space">    </span>push: function (item) {</span></p>
+<p class="p3"><span class="s2">// <span class="Apple-converted-space">      </span>data.push(item);</span></p>
+<p class="p3"><span class="s2">// <span class="Apple-converted-space">    </span>}</span></p>
+<p class="p3"><span class="s2">// <span class="Apple-converted-space">    </span>pop: function () {</span></p>
+<p class="p3"><span class="s2">// <span class="Apple-converted-space">      </span>return</span></p>
+<p class="p3"><span class="s2">// <span class="Apple-converted-space">    </span>}</span></p>
+<p class="p3"><span class="s2">// <span class="Apple-converted-space">  </span>};</span></p>
+<p class="p3"><span class="s2">// }());</span></p>
+<h3 style="margin: 0.0px 0.0px 10.0px 0.0px; line-height: 28.0px; font: 18.0px Helvetica; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b>2. Objekt Hierarchien</b></span></h3>
+<p class="p3"><span class="s2">// super class constructor</span></p>
+<p class="p3"><span class="s2">function Shape() {}</span></p>
+<p class="p3"><span class="s2">// super class printing function</span></p>
+<p class="p3"><span class="s2">Shape.prototype.draw = function() {}</span></p>
+<p class="p4"><span class="s2"></span><br></p>
+<p class="p3"><span class="s2">// circle</span></p>
+<p class="p3"><span class="s2">function Circle(x, y, r) {</span></p>
+<p class="p3"><span class="s2"><span class="Apple-converted-space">  </span>this.x = x;</span></p>
+<p class="p3"><span class="s2"><span class="Apple-converted-space">  </span>this.y = y;</span></p>
+<p class="p3"><span class="s2"><span class="Apple-converted-space">  </span>this.r = r;</span></p>
+<p class="p3"><span class="s2">}</span></p>
+<p class="p3"><span class="s2">Circle.prototype = new Shape();</span></p>
+<p class="p3"><span class="s2">Circle.prototype.draw = function() {</span></p>
+<p class="p3"><span class="s2"><span class="Apple-converted-space">  </span>return "x: " + this.x + " y: " + this.y + " r: " + this.r;</span></p>
+<p class="p3"><span class="s2">}</span></p>
+<p class="p3"><span class="s2">// test circle</span></p>
+<p class="p3"><span class="s2">var c1 = new Circle(0, 0, 5);</span></p>
+<p class="p3"><span class="s2">console.log(c1.draw());</span></p>
+<p class="p4"><span class="s2"></span><br></p>
+<p class="p3"><span class="s2">// rectangle</span></p>
+<p class="p3"><span class="s2">function Rectangle(x, y, width, heigth) {</span></p>
+<p class="p3"><span class="s2"><span class="Apple-converted-space">  </span>this.x = x;</span></p>
+<p class="p3"><span class="s2"><span class="Apple-converted-space">  </span>this.y = y;</span></p>
+<p class="p3"><span class="s2"><span class="Apple-converted-space">  </span>this.width = width;</span></p>
+<p class="p3"><span class="s2"><span class="Apple-converted-space">  </span>this.heigth = heigth;</span></p>
+<p class="p3"><span class="s2">}</span></p>
+<p class="p3"><span class="s2">Rectangle.prototype = new Shape();</span></p>
+<p class="p3"><span class="s2">Rectangle.prototype.draw = function() {</span></p>
+<p class="p3"><span class="s2"><span class="Apple-converted-space">  </span>return "x: " + this.x + " y: " + this.y +</span></p>
+<p class="p3"><span class="s2"><span class="Apple-converted-space">    </span>" width: " + this.width + " heigth: " + this.heigth;</span></p>
+<p class="p3"><span class="s2">}</span></p>
+<p class="p3"><span class="s2">// test rectangle</span></p>
+<p class="p3"><span class="s2">var r1 = new Rectangle(0, 0, 10, 20);</span></p>
+<p class="p3"><span class="s2">console.log(r1.draw());</span></p>
+<p class="p4"><span class="s2"></span><br></p>
+<p class="p3"><span class="s2">// add area property</span></p>
+<p class="p3"><span class="s2">Shape.area = function() {}</span></p>
+<p class="p3"><span class="s2">Circle.prototype.area = function() {</span></p>
+<p class="p3"><span class="s2"><span class="Apple-converted-space">  </span>return "area: " + (this.r ** 2 * Math.PI);</span></p>
+<p class="p3"><span class="s2">}</span></p>
+<p class="p3"><span class="s2">Rectangle.prototype.area = function() {</span></p>
+<p class="p3"><span class="s2"><span class="Apple-converted-space">  </span>return "area: " + (this.width * this.heigth);</span></p>
+<p class="p3"><span class="s2">}</span></p>
+<p class="p3"><span class="s2">// test area</span></p>
+<p class="p3"><span class="s2">console.log(c1.area()); // works</span></p>
+<p class="p3"><span class="s2">console.log(r1.area()); // works</span></p>
+<p class="p4"><span class="s2"></span><br></p>
+<p class="p3"><span class="s2">// serialize</span></p>
+<p class="p3"><span class="s2">var jsonc1 = JSON.stringify(c1, null, ' ');</span></p>
+<p class="p3"><span class="s2">console.log(jsonc1); // works</span></p>
+<p class="p3"><span class="s2">var jsonr1 = JSON.stringify(r1, null, ' ');</span></p>
+<p class="p3"><span class="s2">console.log(jsonr1); // works</span></p>
+<h3 style="margin: 0.0px 0.0px 10.0px 0.0px; line-height: 28.0px; font: 18.0px Helvetica; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b>Was ist der Unterschied zwischen Objekt-Hierarchien in JavaScript und Vererbung in anderen OO Programmiersprachen? Was sind die Vor- und Nachteile?</b></span></h3>
+<p class="p6"><span class="s1">Der wichtigste Unterschied ist, dass in JavaScript alles ein Objekt ist, z.B. auch Funktionen (first-class functions). Dies wiederum bedeutet, dass in JS auch Funktionen abgeleitet werden können (im Gegensatz zu z.B. Java). In JS existieren auch keine Klassen, sondern nur Objekte.</span></p>
+<p class="p6"><span class="s1">Die Vererbung erfolgt in JS mithilfe von prototypes (im Gegensatz zu Klassen bei Java). Bei JS hat jedes Objekt einen prototype (prototype chain), falls vorher keines definiert wurde, ist "Object" der prototype davon. (Object selber hat den prototype null, null wiederum hat keinen prototype). JS sucht bei Variablen, die im Objekt nicht gefunden wurden die Variablen des prototypes ab (callback).</span></p>
+<p class="p6"><span class="s1">Vorteil der Vererbung bei JS: Da Klassen wegfallen und jedes Objekt als prototype dienen kann, ist die Vererbung bei JS einfacher, mächtiger und man braucht weniger Code zu schreiben.</span></p>
+</body>
+</html>
