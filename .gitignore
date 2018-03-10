@@ -1,7 +1,7 @@
-.pdf
-.DS_Store
-
 key-webprog20.pem.txt
+*.DS_Store
+*.jpg
 *.pdf
+*.png
 *.txt
 *.xlsx

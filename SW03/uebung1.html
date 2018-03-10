@@ -1,0 +1,59 @@
+<!-- Uebung1
+  Author: Fabian Meyer
+  Button creates random colors and random strings
+-->
+
+<!doctype html>
+<html lang="de">
+
+<head>
+  <meta charset="utf-8">
+  <title>Uebung1</title>
+</head>
+
+<body style="background-color: lightblue;">
+  <div>
+    <h1 id="Hello_string" style="
+    color: white;
+    font-size: 192px;
+    font-style: normal;
+    font-family: 'Fira Code', monospace">
+    HELLO THERE
+    </h1>
+  </div>
+  <div>
+    <button id="Hello_button" onclick="random()">HELLO THERE</button>
+    <button id="Remove_button" onclick="remove()">Tschüssli</button>
+  </div>
+  <script type="text/javascript">
+    function random() {
+      function rc() {
+        var x = Math.floor(Math.random() * 256);
+        var y = Math.floor(Math.random() * 256);
+        var z = Math.floor(Math.random() * 256);
+        var color = "rgb(" + x + "," + y + "," + z + ")";
+        return color;
+      }
+      function rs() {
+        var text = "";
+        var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+\"*ç%&/()=±“”#Ç[]|{}≠\ ";
+        for (var i = 0; i < 11; i++)
+          text += possible.charAt(Math.floor(Math.random() * possible.length));
+        return text;
+      }
+      document.body.style.transitionDuration = "1s";
+      document.getElementById("Hello_string").style.transitionDuration = "1s";
+      document.body.style.backgroundColor = rc();
+      document.getElementById("Hello_string").style.color = rc();
+      document.getElementById("Hello_string").innerHTML = rs();
+      document.getElementById("Hello_button").innerHTML = document.getElementById("Hello_string").innerHTML;
+      document.title = document.getElementById("Hello_string").innerHTML;
+    }
+    function remove() {
+      document.getElementById("Hello_string").style.transitionDuration = "10s";
+      document.getElementById("Hello_string").style.color = document.body.style.backgroundColor;
+    }
+  </script>
+</body>
+
+</html>
