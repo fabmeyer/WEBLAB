@@ -1,0 +1,64 @@
+<!-- Uebung2
+  Author: Fabian Meyer
+  JS-function that creates a multiplication table
+-->
+<!doctype html>
+<html lang="de">
+
+<head>
+  <meta charset="utf-8">
+  <title>Uebung3</title>
+  <link rel="stylesheet" href="Assets/style.css">
+  <script type="text/javascript" src="Assets/script.js"></script>
+</head>
+
+<body>
+  <div class="clock" id="clock_whole">
+    <div class="clock_parts_big">
+      <span class="clock_parts_small">
+        <div class="button" id="m_up">
+          <a href="#" onclick="minutes_up()">minutes up</a>
+        </div>
+        <div class="button" id="m_down">
+          <a href="#" onclick="minutes_down()">minutes down</a>
+        </div>
+      </span>
+      <span class="clock_parts_small">
+        <div class="time">
+          <a id="minutes">00</a>
+          <a>:</a>
+          <a id="seconds">00</a>
+          <a>:</a>
+          <a id="centiseconds">00</a>
+        </div>
+      </span>
+      <span class="clock_parts_small">
+        <div class="button" id="s_up">
+          <a href="#"  onclick="seconds_up()">seconds up</a>
+        </div>
+        <div class="button" id="s_down">
+          <a href="#"  onclick="seconds_down()">seconds down</a>
+        </div>
+      </span>
+    </div>
+    <div class="clock_parts_big">
+      <span class="clock_parts_small">
+        <div class="button" id="start">
+          <a href="#" onclick="start()">start</a>
+        </div>
+      </span>
+      <span class="clock_parts_small">
+        <div class="button" id="stop">
+          <a href="#" onclick="stop()">stop</a>
+        </div>
+      </span>
+      <span class="clock_parts_small">
+        <div class="button" id="reset">
+          <a href="#" onclick="reset()">reset</a>
+        </div>
+      </span>
+    </div>
+  </div>
+</body>
+
+</html>
