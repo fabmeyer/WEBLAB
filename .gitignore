@@ -1,4 +1,11 @@
+SW03/Uebung03.html
+SW03/Uebung03.md
 key-webprog20.pem.txt
+node_modules
+.eslintrc
+.jsbeautifyrc
+package-lock.json
+package.json
 *.DS_Store
 *.jpg
 *.pdf
