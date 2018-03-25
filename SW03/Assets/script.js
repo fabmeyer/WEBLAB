@@ -51,7 +51,6 @@ function pad(number, length) {
 }
 
 function start() {
-  // TODO: fix multiple starting
   if (running) {
     return;
   } else {
@@ -69,8 +68,8 @@ function start() {
   }
 
   function counting_down() {
-    console.log("minutes " + minutes + "\n seconds " + seconds
-    + "\ centiseconds" + centiseconds);
+    console.log('minutes ' + minutes + '\n seconds ' + seconds +
+      '\ centiseconds' + centiseconds);
     if (running) {
       if (centiseconds > 0) {
         centiseconds--;
