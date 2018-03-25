@@ -1,3 +1,5 @@
+'use strict';
+
 function convertArrayToUpperCase(arr) {
   return new Promise((resolve, reject) => {
     console.log('Wants to convert ' + arr.length + ' strings to UPPERCASE.');
@@ -58,14 +60,14 @@ function fetch(...args) {
       processedTitles.forEach((title) => {
         console.log(title);
       });
-      console.log('Promise fulfilled.');
+      console.log('...Promise fulfilled.');
       return promiseArray;
     })
     .catch((err) => {
-      console.log(err);
+      console.log(err + ' ...Promise rejected');
     });
 }
 
-fetch('hello', 'sir', 'or', 'madame', 'how', 'are', 'you?');
+// fetch('hello', 'sir', 'or', 'madame', 'how', 'are', 'you?');
 
-// fetch('hello', 133); // works
+fetch('hello', 133); // works
