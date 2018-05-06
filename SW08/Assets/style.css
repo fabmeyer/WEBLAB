@@ -1,0 +1,55 @@
+@font-face {
+  font-family: "DSEG7Classic-Regular";
+  src: url(DSEG7Classic-Regular.ttf) format("truetype");
+  /* http://www.keshikan.net/fonts-e.html */
+}
+
+.clock {
+  background-color: Azure;
+  padding: 25px;
+  display: block;
+  text-align: center;
+  justify-content: center;
+  box-shadow: 0px 10px 10px grey;
+  @media (max-width: 575.98px) {
+      display: flex;
+      height: 300px;
+  }
+}
+
+.clock_parts_big {
+  margin: 10px;
+  background-color: Lavender;
+  display: block;
+  align-items: center;
+  border: 3px solid grey;
+  border-radius: 10px;
+}
+
+.button {
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 20px;
+  background-color: LavenderBlush;
+  padding: 5px;
+  border: 3px solid black;
+  border-radius: 10px;
+  box-shadow: 0px 5px 5px grey;
+}
+
+.time {
+  display: flex;
+  justify-content: space-around;
+  width: auto;
+  font-family: "DSEG7Classic-Regular", monospace;
+  font-size: 40px;
+  padding: 10px;
+  text-decoration: underline;
+  @media (max-width: 575.98px) {
+      font-size: 20px;
+  }
+}
+
+.numbers {
+  width: fit-content;
+  height: fit-content;
+}
